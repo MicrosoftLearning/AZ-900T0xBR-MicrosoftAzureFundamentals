@@ -1,25 +1,18 @@
 ---
-title: Online Hosted Instructions
+title: Instruções Hospedadas Online
 permalink: index.html
 layout: home
 ---
 
-# Content Directory
+# Diretório de Conteúdo
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+Hiperlinks para cada um dos tutoriais. Os instrutores podem optar por usar o passo a passo como uma demonstração ou um laboratório do aluno. 
 
-## Labs
+## Passo a passo
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
+{% atribuir wts = site.pages | em que _exp:"page", "page.url contém '/Instructions/Walkthroughs'" %}
+| Módulo | Passo a passo |
 | --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% para atividade no wts %}| {{ activity.wts.module }} | [{{ activity.wts.title }}{% se activity.wts.type %} – {{ activity.wts.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-## Demos
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
