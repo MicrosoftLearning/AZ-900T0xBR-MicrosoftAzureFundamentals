@@ -3,7 +3,7 @@ wts:
     title: '19 – Usar o Azure Pricing Calculator (10 min)'
     module: 'Módulo 06: Descreva o gerenciamento de custos do Azure e os acordos de nível de serviço'
 ---
-# 19 – Use o Pricing Calculator
+# 19 – Usar o Azure Pricing Calculator
 
 Neste passo a passo, usaremos o Azure Pricing Calculator para gerar uma estimativa de custo para uma máquina virtual do Azure e recursos de rede relacionados.
 

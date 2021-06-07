@@ -25,7 +25,7 @@ Nesta tarefa, criaremos um hub IoT.
     | Nome do hub IoT | **my-hub-groupxxxx** |
     | | |
 
-    **Observação** - Lembre-se de alterar o **xxxx** para que tenha um **Nome do Hub IoT ** exclusivo.
+    **Observação** - Lembre-se de alterar o **xxxx** para que tenha um **Nome do Hub IoT** exclusivo.
 
 4. Vá para a guia **Gerenciamento** e use a lista suspensa para definir o **Preço e o nível de escala** como **S1: camada Standard**.
 

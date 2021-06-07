@@ -73,7 +73,7 @@ Nesta tarefa, criaremos contas de armazenamento para testar a marcação necess�
 
 # Tarefa 3: Veja todos os recursos com uma marca específica
 
-1. No portal do Azure, na folha **Todos os serviços**, procure e selecione **Marcas **.
+1. No portal do Azure, na folha **Todos os serviços**, procure e selecione **Marcas**.
 
 2. Observe todas as marcas e seus valores. Clique no par de chave/valor **Empresa: Contoso**. Isso exibirá uma folha mostrando a conta de armazenamento recém-criada, contanto que você tenha incluído a marca durante sua implantação. 
 

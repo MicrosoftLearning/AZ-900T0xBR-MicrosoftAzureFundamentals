@@ -28,7 +28,7 @@ Nesta tarefa, criaremos um aplicativo de funções.
     | Região | **Leste dos EUA** |
     | | |
 
-    **Observação** - Lembre-se de alterar o **xxxx** para que tenha um **Nome de aplicativo de funções ** exclusivo
+    **Observação** - Lembre-se de alterar o **xxxx** para que tenha um **Nome de aplicativo de funções** exclusivo
 
 1. Clique em **Revisar + Criar** e, após a validação bem-sucedida, clique em **Criar** para começar a provisionar e implantar seu novo Aplicativo de Funções do Azure.
 

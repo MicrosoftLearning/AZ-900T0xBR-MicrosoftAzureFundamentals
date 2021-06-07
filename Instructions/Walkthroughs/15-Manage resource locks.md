@@ -13,15 +13,15 @@ Nesta tarefa, criaremos um grupo de recursos para este exercício.
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Na barra de **Pesquisa** na parte superior do portal, procure **Grupos de recursos**. Clique no grupo de recursos **myRGLocks-XXXXXXXX**.
+2. Na barra de **Pesquisa** na parte superior do portal, procure **Grupos de recursos**. 
 
-3. Na seção **Configurações**, clique em **Bloqueios** e em **+Adicionar**, **+Criar** ou **+Novo**. 
+3. Depois, clique em **+Adicionar +Novo +Criar** 
 
     | Configuração | Valor |
     | -- | -- |
     | Assinatura | **Usar sua assinatura** |
     | Nome | **myRGLocks** |
-    | Região | (EUA) Leste dos EUA |
+    | Região | **(EUA) Leste dos EUA** |
     
 
 # Tarefa 2:  Adicionar um bloqueio ao grupo de recursos e testar a exclusão
@@ -32,7 +32,7 @@ Nesta tarefa, adicionaremos um bloqueio de recurso ao grupo de recursos e testar
 
 2. Você pode aplicar um bloqueio a uma assinatura, grupo de recursos ou recurso individual para evitar exclusão acidental ou modificação de recursos críticos. 
 
-3. Na seção **Configurações**, clique em **Bloqueios** e em **Adicionar**. 
+3. Na seção **Configurações**, clique em **Bloqueios** e em **+ Adicionar**. 
 
     ![Captura de tela do grupo de recursos myRGLocks com exibição do painel Bloqueios.](../images/1601.png)
 
@@ -52,16 +52,16 @@ Nesta tarefa, adicionaremos um bloqueio de recurso ao grupo de recursos e testar
 
 Nesta tarefa, testaremos se o bloqueio de recursos protege uma conta de armazenamento no grupo de recursos. 
 
-1. Na folha **Todos os serviços**, procure e selecione **Contas de armazenamento** e, em seguida, clique em **+ Adicionar**, **+Criar** ou **+Novo**. 
+1. Na folha **Todos os serviços**, procure e selecione **Contas de armazenamento** e, em seguida, clique em **+ Adicionar, + Criar ou + Novo**. 
 
-2. Na página **Contas de armazenamento**, folha **+Adicionar**, **+Criar** ou **+Novo**, preencha as seguintes informações (substitua **xxxx** no nome da conta de armazenamento por letras e dígitos de forma que o nome seja globalmente exclusivo). Mantenha os padrões para todo o resto.
+2. Na página **Contas de armazenamento**, folha **+Adicionar + Novo + Criar**, preencha as seguintes informações (substitua **xxxx** no nome da conta de armazenamento por letras e dígitos de forma que o nome seja globalmente exclusivo). Mantenha os padrões para todo o resto.
 
     | Configuração | Valor | 
     | --- | --- |
     | Assinatura | **Selecionar sua assinatura** |
     | Grupo de recursos | **myRGLocks** |
     | Nome da conta de armazenamento | **storageaccountxxxx** |
-    | Local | (EUA) Leste dos EUA  |
+    | Local | **(EUA) Leste dos EUA**  |
     | Desempenho | **Standard** |
     | Tipo de conta | **StorageV2 (v2 de uso geral)** |
     | Replicação | **LRS (armazenamento com redundância local)** |
