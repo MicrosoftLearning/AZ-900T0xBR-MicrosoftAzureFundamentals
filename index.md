@@ -10,9 +10,9 @@ Hiperlinks para cada um dos tutoriais. Os instrutores podem optar por usar o pas
 
 ## Passo a passo
 
-{% atribuir wts = site.pages | em que _exp:"page", "page.url contém '/Instructions/Walkthroughs'" %}
+{% assign wts = site.pages | where_exp:"page", "page.url contains '/Instructions/Walkthroughs'" %}
 | Módulo | Passo a passo |
 | --- | --- | 
-{% para atividade no wts %}| {{ activity.wts.module }} | [{{ activity.wts.title }}{% se activity.wts.type %} – {{ activity.wts.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% for activity in wts %}| {{ activity.wts.module }} | [{{ activity.wts.title }}{% if activity.wts.type %} - {{ activity.wts.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
