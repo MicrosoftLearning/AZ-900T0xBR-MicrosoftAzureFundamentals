@@ -3,11 +3,11 @@ wts:
     title: '16 – Implementar marcação de recursos (5 min)'
     module: 'Módulo 05: Descreva os recursos de identidade, governança, privacidade e conformidade'
 ---
-# 16 – Implementar marcação de recursos
+# 16 – Implantar marcação de recursos (5 min)
 
 Neste passo a passo, vamos criar uma atribuição de política que requer marcação, criar uma conta de armazenamento e testar a marcação, visualizar recursos com uma marcação especificada e remover a política de marcação.
 
-# Tarefa 1: Criar uma atribuição de política (5 min)
+# Tarefa 1: Criar atribuição de Política 
 
 Nesta tarefa, vamos configurar a política **Exigir uma marca nos recursos** e atribuí-la à nossa assinatura. 
 
@@ -22,14 +22,13 @@ Nesta tarefa, vamos configurar a política **Exigir uma marca nos recursos** e a
 5. Em **Básico**, selecione o botão de reticências **Definição de política** (lado direito da caixa de texto). Na caixa **Pesquisar**, insira a **marca** de valor. Uma lista de políticas relacionadas com a palavra **marca** aparecerá. Role para baixo até encontrar **Exigir uma marca na definição de recursos**, clique nele e clique em **Selecionar**.
 
    ![Captura de tela do painel Definições disponíveis com Exigir uma marca nos recursos selecionados.](../images/1701.png)
-
+   
 6. Na guia **Parâmetros**, digite **Empresa** para o nome da marca. E **Contoso** para o Valor. Clique em **Revisar + criar** e, em seguida, em **Criar**.
-
-    **Observação:** Este é um exemplo simples para demonstrar a marcação. Observe que a tarefa leva cerca de 30 minutos para entrar em vigor. 
 
     ![Captura de tela do painel Atribuir política com o nome da marca preenchido.](../images/1702.png)
 
 7. A atribuição de política de **Exigir uma marca nos recursos** agora está em vigor. Quando um recurso é criado, ele deve incluir uma marca com a chave da empresa.
+   **Observação – você precisa esperar até 30 minutos para que a Política seja aplicada.** 
 
    ![Captura de tela do painel Política – Atribuições com a atribuição de locais permitida realçada.](../images/1703.png)
 
@@ -37,21 +36,20 @@ Nesta tarefa, vamos configurar a política **Exigir uma marca nos recursos** e a
 
 Nesta tarefa, criaremos contas de armazenamento para testar a marcação necessária. 
 
-1. No portal do Azure, na folha **Todos os serviços**, procure e selecione **Contas de armazenamento** e, em seguida, clique em **+ Adicionar, + Criar ou + Novo**.
+1. No portal do Azure, na folha **Todos os serviços**, procure e selecione **Contas de armazenamento** e, em seguida, selecione **+Adicionar +Nova +Criar**.
 
 2. Na guia **Básico** da folha **Criar conta de armazenamento**, preencha as seguintes informações (substitua **xxxx** no nome da conta de armazenamento por letras e dígitos de forma que o nome seja globalmente exclusivo). Mantenha os padrões para todo o resto.
 
     | Configuração | Valor | 
     | --- | --- |
-    | Assinatura | **Usar sua assinatura** |
-    | Grupo de recursos | **myRGTags**  |
+    | Assinatura | **Use a padrão** |
+    | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome da conta de armazenamento | **storageaccountxxxx** |
     | Local | **(EUA) Leste dos EUA** |
-    | | |
 
 3. Clique em **Revisar + criar**. 
 
-    **Observação:** Estamos testando para ver o que acontece quando a marca não é fornecida. 
+    **Observação:** Estamos testando para ver o que acontece quando a marca não é fornecida. Pode levar até 30 minutos para as Políticas entrarem em vigor.
 
 4. Você receberá uma mensagem de falha na validação. Clique na mensagem **Clique aqui para ver os detalhes**. Na folha **Erros**, na guia **Resumo**, observe a mensagem de erro informando que o recurso não foi permitido pela Política.
 
@@ -59,7 +57,6 @@ Nesta tarefa, criaremos contas de armazenamento para testar a marcação necess�
 
     ![Captura de tela de não permitida devido a um erro de política.](../images/1704.png)
 
-    **Observação – você precisa esperar 30 minutos para que a marcação seja concluída.** 
 
 5. Feche o painel **Erro** e clique em **Anterior** (parte inferior da tela). Forneça as informações de marcação. 
 
@@ -67,7 +64,6 @@ Nesta tarefa, criaremos contas de armazenamento para testar a marcação necess�
     | --- | --- |
     | Nome da marca | **Empresa** (pode não estar na lista suspensa) |
     | Valor da marca | **Contoso** |
-    | | |
 
 6. Clique em **Revisar + criar** e verifique se a validação foi bem-sucedida. Clique em **Criar** para implantar a conta de armazenamento. 
 
@@ -99,7 +95,7 @@ Nesta tarefa, removeremos a política **Exigir uma marca nos recursos** para que
 
 5. Se você tiver tempo, crie outro recurso sem uma marca para garantir que a política não esteja mais em vigor.
 
-Neste passo a passo, criamos uma atribuição de política que exigia marcação, criamos uma conta de armazenamento e testamos a marcação, visualizamos recursos com uma marcação especificada e removemos a política de marcação.
+Parabéns! Neste passo a passo, criamos uma atribuição de política que exigiu marcação, criamos um recurso (conta de armazenamento) e testamos a Política para marcação, visualizamos recursos com uma marcação especificada e removemos a política de marcação.
 
 
 **Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.

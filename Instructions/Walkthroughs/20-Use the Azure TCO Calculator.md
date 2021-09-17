@@ -3,14 +3,14 @@ wts:
     title: '20 – Usar o Azure TCO Calculator (10 min)'
     module: 'Módulo 06: Descreva o gerenciamento de custos do Azure e os acordos de nível de serviço'
 ---
-# 20 – Usar o Azure TCO Calculator
+# 20 – Usar o Azure TCO Calculator (10 min)
 
 
 Neste passo a passo, você usará a calculadora do custo total de propriedade (TCO) para gerar um relatório de comparação de custos para um ambiente local.
 
 **Observação**: Este passo a passo fornece definições de exemplo de infraestrutura local e cargas de trabalho para um datacenter típico. Para criar um relatório da Calculadora do TCO, use as definições de exemplo ou forneça detalhes de sua infraestrutura local e cargas de trabalho *reais*.
 
-# Tarefa 1: Configurar a calculadora de TCO (10 min)
+# Tarefa 1: Configurar a calculadora de TCO
 
 Nesta tarefa, adicionaremos informações de infraestrutura à calculadora. 
 
@@ -30,7 +30,6 @@ Nesta tarefa, adicionaremos informações de infraestrutura à calculadora.
     | RAM (GB) | **16** |
     | Otimizar por | **CPU** |
     | Windows Server 2008/2008 R2 | **Desativado** |
-    | | |
 
 3. Selecione **+ Adicionar carga de trabalho do servidor** para criar uma linha para uma nova definição de carga de trabalho do servidor. 
 
@@ -46,7 +45,6 @@ Nesta tarefa, adicionaremos informações de infraestrutura à calculadora.
     | RAM (GB) | **16** |
     | Otimizar por | **CPU** |
     | Windows Server 2008/2008 R2 | **Desativado** |
-    | | |
 
 4. No painel **Armazenamento**, clique em **Adicionar armazenamento**.
 
@@ -58,14 +56,12 @@ Nesta tarefa, adicionaremos informações de infraestrutura à calculadora.
     | Capacidade | **60 TB** |  
     | Backup | **120 TB** |
     | Arquivar | **0 TB** |
-    | | |
 
 5. No painel **Rede**, adicione largura de banda. 
 
     | Configurações | Valor |
     | -- | -- |
     | Largura de banda de saída | 15 TB|
-    | | |
 
 6. Clique em **Próximo**.
 
@@ -74,7 +70,6 @@ Nesta tarefa, adicionaremos informações de infraestrutura à calculadora.
     | Configurações | Valor |
     | -- | -- |
     | Moeda | **Euro** |
-    | | |
 
 8. Clique em **Próximo**.
 
@@ -88,8 +83,6 @@ Nesta tarefa, revisaremos as recomendações de redução de custos e faremos o 
     | -- | -- |
     | Prazo| **3 anos** |
     | Região | **Norte da Europa** |
-    | | |
-
 
 2. Para modificar as informações fornecidas, vá até o final da página e clique em **Voltar**. 
 

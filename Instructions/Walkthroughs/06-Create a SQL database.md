@@ -4,75 +4,70 @@ wts:
     module: 'Módulo 02 – Principais serviços do Azure (cargas de trabalho)'
 ---
 
-# 06 – Criar um banco de dados SQL
+# 06 – Criar um banco de dados SQL (5 min)
 
 Neste passo a passo, vamos criar um banco de dados SQL no Azure e depois consultar os dados nesse banco de dados.
 
-# Tarefa 1: Criar o banco de dados (5 min)
+# Tarefa 1: Criar o banco de dados 
 
 Nesta tarefa, criaremos um banco de dados SQL baseado no banco de dados de amostra AdventureWorksLT. 
 
 1. Entre no portal do Azure em [**https://portal.azure.com**](https://portal.azure.com).
 
-2. Na folha **Todos os serviços**, procure e selecione **Bancos de dados SQL** e, em seguida, clique em **+ Adicionar, + Criar ou + Novo**. 
+2. Na folha **Todos os serviços**, procure e selecione **Bancos de dados SQL** e depois selecione **+ Adicionar, + Criar, + Novo**. 
 
 3. Na guia **Básico**, preencha essas informações.  
 
     | Configuração | Valor | 
     | --- | --- |
-    | Assinatura | **escolha sua assinatura** |
-    | Grupo de recursos | **myRGDb** (criar novo) |
+    | Assinatura | **Use a padrão fornecida** |
+    | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome do banco de dados| **db1** | 
-    | | |
-
-3. Ao lado da lista suspensa **Servidor**, clique em **Criar novo** e insira essas informações (substitua **xxxx** no nome do servidor por letras e dígitos de forma que o nome seja globalmente exclusivo). Clique em **OK** quando terminar.
-
-    | Configuração | Valor | 
-    | --- | --- |
+    | Servidor | Selecione **Criar novo** (Uma nova barra lateral será aberta à direita)|
     | Nome do servidor | **sqlserverxxxx** (deve ser exclusivo) | 
     | Logon de administrador do servidor | **sqluser** |
     | Senha | **Pa$$w0rd1234** |
     | Local | **(EUA) Leste dos EUA** |
-    | Permitir que os serviços do Azure acessem o servidor| ***Marque a caixa de seleção*** |
-    | | |
+    | Clique em  | **OK** |
 
    ![Captura de tela do painel Servidor e do painel Novo Servidor com os campos preenchidos de acordo com a tabela e com os botões Revisar + criar e OK realçados.](../images/0501.png)
 
-4. Vá para a guia **Rede** e defina as configurações a seguir (deixe os outros campos com os valores padrão) 
+4. Na guia **Rede**, defina as configurações a seguir (deixe os outros campos com os valores padrão) 
 
     | Configuração | Valor | 
     | --- | --- |
     | Método de conectividade | **Ponto de extremidade público** |    
     | Permitir que serviços e recursos do Azure acessem este servidor | **Sim** |
     | Adicionar endereço IP atual do cliente | **Não** |
-    | | |
     
    ![Captura de tela da guia Rede da folha Criar Banco de Dados SQL com as configurações selecionadas de acordo com a tabela e com o botão Revisar + criar realçado.](../images/0501b.png)
 
-5. Vá para a guia **Configurações adicionais**. Usaremos o banco de dados de amostra AdventureWorksLT.
+5. Na guia **Segurança**. 
+
+    | Configuração | Valor | 
+    | --- | --- |
+    | Azure Defender para SQL| **Agora não** |
+    
+6. Vá para a guia **Configurações adicionais**. Usaremos o banco de dados de amostra AdventureWorksLT.
 
     | Configuração | Valor | 
     | --- | --- |
     | Usar dados existentes | **Amostra** |
-    | Ordenação | ***usar padrão*** |
-    | Habilitar o Azure Defender para SQL | **Agora não** |
-    | | |
 
     ![Captura de tela da guia Configurações adicionais da folha Criar Banco de Dados SQL com as configurações selecionadas de acordo com a tabela e com o botão Revisar + criar realçado.](../images/0501c.png)
 
-6. Clique em **Revisar + criar** e selecione **Criar** para implantar e provisionar o grupo de recursos, o servidor e o banco de dados. Pode demorar aprox. 2 a 5 minutos para implantar.
+7. Clique em **Revisar + criar** e selecione **Criar** para implantar e provisionar o grupo de recursos, o servidor e o banco de dados. Pode demorar aprox. 2 a 5 minutos para implantar.
 
-7. Vá para a guia de recursos para localizar o banco de dados SQL que você criou. Você pode precisar atualizar.
 
 # Tarefa 2: Testar o banco de dados.
 
 Nesta tarefa, vamos configurar o SQL Server e executar uma consulta SQL. 
 
-1. Na folha **Todos os serviços**, procure e selecione **Bancos de Dados SQL** e verifique se o novo banco de dados foi criado. Pode ser necessário **Atualizar** a página.
+1. Quando a implantação for concluída, selecione Ir para o recurso na folha de implantação. Se preferir, na folha **Todos os serviços**, procure e selecione **Bancos de Dados** e depois **Bancos de dados SQL**; verifique se o novo banco de dados foi criado. Pode ser necessário **Atualizar** a página.
 
     ![Captura de tela do banco de dados SQL e do servidor que acabam de ser implantados.](../images/0502.png)
 
-2. Clique na entrada **db1** que representa o banco de dados SQL que você criou e, em seguida, clique em **Editor de consultas (pré-visualização)**.
+2. Selecione a entrada **db1** representando o banco de dados SQL criado. Na folha db1, selecione **Editor de Consultas (pré-visualização)**.
 
 3. Faça logon como **sqluser** com a senha **Pa$$w0rd1234**.
 
@@ -80,19 +75,19 @@ Nesta tarefa, vamos configurar o SQL Server e executar uma consulta SQL.
 
     ![Captura de tela da página de logon do Editor de Consultas com erro de endereço IP.](../images/0503.png)
 
-5. Na folha **db1**, clique em **Visão geral**. 
+5. De volta à folha **db1**, selecione **Visão geral**. 
 
     ![Captura de tela da página do SQL Server.](../images/0504.png)
 
-6. Na folha **Visão geral** do SQL Server, clique em **Definir firewall do servidor**.
+6. Na folha **Visão geral** do db1, selecione **Definir firewall do servidor** no centro superior da tela.
 
-7. Clique em **Adicionar IP do cliente** (barra de menu superior) para adicionar o endereço IP mencionado no erro. Certifique-se de **Salvar** suas alterações. 
+7. Selecione **+ Adicionar IP do cliente** (barra de menu superior) para adicionar o endereço IP mencionado no erro. (ele deve ser preenchido automaticamente; caso não seja, cole-o nos campos do endereço IP). Certifique-se de **Salvar** suas alterações. 
 
     ![Captura de tela da página de configurações do firewall do SQL Server com a nova regra de IP realçada.](../images/0506.png)
 
-8. Volte para o banco de dados SQL e para a página de logon do **Editor de Consultas (pré-visualização)**. Tente fazer logon novamente como **sqluser** com a senha **Pa$$w0rd1234**. Desta vez, você deve conseguir. Observe que pode demorar alguns minutos para que a nova regra de firewall seja implantada. 
+8. Volte ao banco de dados SQL (deslizar para a esquerda na barra de alternância na parte inferior) e selecione **Editor de Consultas (Pré-visualização)**. Tente fazer logon novamente como **sqluser** com a senha **Pa$$w0rd1234**. Desta vez, você deve conseguir. Observe que pode demorar alguns minutos para que a nova regra de firewall seja implantada. 
 
-9. Após você fazer logon com êxito, o painel de consultas será exibido. Insira a consulta a seguir no painel do editor.
+9. Quando entrar, o painel de consulta será exibido. Insira a consulta a seguir no painel do editor. 
 
     ```SQL
     SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName
