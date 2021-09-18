@@ -26,7 +26,7 @@ Nesta tarefa, criaremos uma nova instância de contêiner para o aplicativo Web.
 	| Região | **(EUA) Leste dos EUA** |
 	| Origem da imagem| **Docker Hub ou outro registro**|
 	| Tipo de imagem| **Público**|
-	| Imagem| **microsoft/aci-helloworld**|
+	| Imagem| **mcr.microsoft.com/azuredocs/aci-helloworld**|
 	| Tipo de OS| **Linux** |
 	| Tamanho| ***Mantenha o padrão***|
 	|||

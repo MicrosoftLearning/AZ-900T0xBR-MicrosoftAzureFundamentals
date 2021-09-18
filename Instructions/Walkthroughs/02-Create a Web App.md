@@ -40,7 +40,7 @@ Nesta tarefa, você criará um Aplicativo Web do Serviço de Aplicativo do Azure
     | Opções | **Contêiner único** |
     | Origem da imagem | **Docker Hub** |
     | Tipo de acesso | **Público** |
-    | Imagem e marca | **microsoft/aci-helloworld** |
+    | Imagem e marca | **mcr.microsoft.com/azuredocs/aci-helloworld** |
     | | |	
 
 
