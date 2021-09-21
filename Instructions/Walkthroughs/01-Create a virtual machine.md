@@ -26,7 +26,7 @@ Neste passo a passo, criaremos uma máquina virtual no portal do Azure, conectar
     | Tamanho | **Standard D2s v3**|
     | Nome de usuário da conta de administrador | **azureuser** |
     | Senha da conta de administrador | **Pa$$w0rd1234**|
-    | Regras da porta de entrada - | **Permitir portas selecionadas **|
+    | Regras da porta de entrada - | **Permitir portas selecionadas**|
     | Selecionar portas de entrada | **RDP (3389)** e **HTTP (80)**| 
 
 5. Passe para a guia Rede para verificar se **HTTP (80) e RDP (3389)** estão selecionadas na seção **Selecionar portas de entrada**.

@@ -47,7 +47,7 @@ Nesta tarefa, usaremos a CLI do Azure para criar um grupo de recursos e uma máq
     az group list --output table
     ```
 
-4. No Cloud Shell, insira o comando abaixo e verifique se cada linha, exceto a última, termina com o caractere de barra invertida (“\”). Se você digitar todo o comando na mesma linha, não use nenhum caractere de barra invertida. 
+4. No Cloud Shell, insira o comando abaixo e verifique se cada linha, exceto a última, termina com o caractere de barra invertida (`\`). Se você digitar todo o comando na mesma linha, não use nenhum caractere de barra invertida. 
 
     ```cli
     az vm create \
