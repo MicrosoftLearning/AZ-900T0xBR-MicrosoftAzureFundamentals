@@ -3,26 +3,26 @@ wts:
     title: '14 – Gerenciar acesso com o RBAC (5 min)'
     module: 'Módulo 05: Descreva os recursos de identidade, governança, privacidade e conformidade'
 ---
-# 14 – Gerenciar acesso com o RBAC
+# 14 – Gerenciar acesso com o RBAC (5 min)
 
-Neste passo a passo, vamos atribuir funções e visualizar logs de atividades. 
+Neste passo a passo, vamos atribuir funções de permissão e visualizar recursos e logs.
 
-# Tarefa 1: Ver e atribuir funções (5 min)
+# Tarefa 1: Visualizar e atribuir funções
 
 Nesta tarefa, atribuiremos a função de colaborador da máquina virtual. 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Na folha **Todos os serviços**, procure e selecione **Grupo de recursos** e, em seguida, clique em **+ Adicionar, + Criar ou + Novo**.
+2. Na folha **Todos os serviços**, procure e selecione **Grupos de recursos** e, em seguida, selecione **+ Adicionar + Novo + Criar**.
 
 3. Criar um grupo de recursos. Clique em **Criar** quando terminar. 
 
     | Configuração | Valor |
     | -- | -- |
-    | Assinatura | **escolha sua assinatura** |
+    | Assinatura | **Use a padrão** |
     | Grupo de recursos | **myRGRBAC** |
     | Região | **(EUA) Leste dos EUA** |
-    | | |
+   
 
 4. Clique em **Revisar + criar** e, em seguida, clique em **Criar**.
 
@@ -38,8 +38,8 @@ Nesta tarefa, atribuiremos a função de colaborador da máquina virtual.
     | -- | -- |
     | Função | **Colaborador de máquina virtual** |
     | Atribuir acesso a | **usuário, grupo ou entidade de serviço** |
-    | Selecione | sua conta de usuário |
-    | | |
+    | Selecione | **Adicionar conta de usuário** |
+ 
 
     **Observação:** A função de colaborador da máquina virtual permite que você gerencie máquinas virtuais, mas não acesse seu sistema operacional ou gerencie a rede virtual e a conta de armazenamento às quais estão conectadas.
 
@@ -63,8 +63,7 @@ Nesta tarefa, veremos o log de atividades para verificar a atribuição de funç
 
     **Observação**: Você consegue descobrir como remover sua atribuição de função?
 
-Parabéns! Você atribuiu funções e visualizou logs de atividades. 
+Parabéns! Você criou um grupo de recursos, atribuiu uma função de acesso a ele e visualizou logs de atividades. 
 
 **Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
-
 

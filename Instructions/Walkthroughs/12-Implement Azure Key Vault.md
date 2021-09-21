@@ -3,32 +3,32 @@ wts:
     title: '12 – Implementar Azure Key Vault (5 min)'
     module: 'Módulo 04: Descreva a segurança geral e os recursos de segurança da rede'
 ---
-# 12 – Implementar Azure Key Vault
+# 12 – Implantar o Azure Key Vault (5 min)
 
 Neste passo a passo, criaremos um Azure Key Vault e, em seguida, criaremos um segredo de senha dentro desse cofre de chaves, fornecendo uma senha armazenada com segurança e gerenciada centralmente para uso com aplicativos.
 
-# Tarefa 1: Criar um Azure Key Vault (5 min)
+# Tarefa 1: Criar um Azure Key Vault 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Na folha **Todos os serviços**, procure e selecione **Cofres de chaves** e, em seguida, selecione **+ Adicionar, + Criar ou + Novo**.
+2. Na folha **Todos os serviços**, procure e selecione **Cofres de chaves** e, em seguida, selecione **+Adicionar +Novo +Criar**.
 
 3. Configure o cofre de chaves (substitua **xxxx** no nome do cofre de chaves por letras e dígitos de forma que o nome seja globalmente exclusivo). Mantenha os padrões para todo o resto.
 
     | Configuração | Valor | 
     | --- | --- |
-    | Assinatura | **Usar sua assinatura** |
-    | Grupo de recursos | **myRGKV** (criar novo) |
+    | Assinatura | **Use a padrão fornecida** |
+    | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome do cofre de chaves | **keyvaulttestxxx** |
     | Local | **Leste dos EUA** |
     | Tipo de preço | **Standard** |
-    | | |
-
-4. Clique em **Revisar + criar** e, em seguida, clique em **Criar** após a validação. 
+    
+    **Observação** substitua **xxxx** para ter um nome exclusivo.
+4. Clique em **Revisar + criar** e, em seguida, clique em **Criar**. 
 
 5. Depois que o novo cofre de chaves for provisionado, clique em **Ir para o recurso**. Ou você pode localizar seu novo cofre de chaves procurando por ele. 
 
-6. Clique na guia **Visão geral** do cofre de chaves e anote o **nome DNS**. Os aplicativos que usam seu cofre por meio da API REST precisarão desse URI.
+6. Selecione a guia **Visão geral** do cofre de chaves e anote o **URI do Cofre**. Os aplicativos que usam o cofre por meio de APIs REST vão precisar desse URI.
 
 7. Reserve um momento para navegar por algumas das outras opções de cofre de chaves. Em **Configurações**, revise **Chaves**, **Segredos**, **Certificados**, **Políticas de Acesso**, **Firewalls e redes virtuais**.
 
@@ -47,15 +47,15 @@ Nesta tarefa, adicionaremos uma senha ao cofre de chaves.
     | Opções de upload | **Manual** |
     | Nome | **ExamplePassword** |
     | Valor | **hVFkk96** |
-    | | |
 
 3. Clique em **Criar**.
 
 4. Assim que o segredo tiver sido criado com sucesso, clique em **ExamplePassword** e observe que ele tem o status **Habilitado**
 
-5. Clique na versão atual, observe o **Identificador secreto**. Este é o valor de URL que agora você pode usar com aplicativos. Ele fornece uma senha gerenciada centralmente e armazenada com segurança.
+5. Selecione o segredo que acabou de criar e observe o **Identificador de Segredo**. Este é o valor de URL que agora você pode usar com aplicativos. Ele fornece uma senha gerenciada centralmente e armazenada com segurança. 
 
 6. Clique no botão **Mostrar valor secreto** para exibir a senha que você especificou anteriormente.
+
 
 Parabéns! Você criou um Azure Key Vault e, em seguida, criou um segredo de senha nesse cofre de chaves, fornecendo uma senha armazenada com segurança e gerenciada centralmente para uso com aplicativos.
 

@@ -3,11 +3,11 @@ wts:
     title: '19 – Usar o Azure Pricing Calculator (10 min)'
     module: 'Módulo 06: Descreva o gerenciamento de custos do Azure e os acordos de nível de serviço'
 ---
-# 19 – Usar o Azure Pricing Calculator
+# 19 – Usar a Calculadora de Preços do Azure (10 min)
 
 Neste passo a passo, usaremos o Azure Pricing Calculator para gerar uma estimativa de custo para uma máquina virtual do Azure e recursos de rede relacionados.
 
-# Tarefa 1: Configurar a Pricing Calculator (10 min)
+# Tarefa 1: Configurar a calculadora de preços
 
 Nesta tarefa, estimaremos o custo de uma infraestrutura de amostra usando o Azure Pricing Calculator. 
 
@@ -23,15 +23,13 @@ Nesta tarefa, estimaremos o custo de uma infraestrutura de amostra usando o Azur
 
 4. Modifique a configuração padrão da VM.
 
-    | Região | Sistema operacional | Tipo |
-    |------|----------------|----|
-    | Norte da Europa | Windows | (Somente SO) |
-    | | |
-
-    | Camada | Instância |
-    |----|--------|
-    | Standard | A2: 2 núcleos(s), 3,5 GB de RAM, 135 GB de armazenamento temporário |
-    | | |
+    | Configurações | Valor |
+    | -- | -- |
+    | Região | **Norte da Europa** |
+    | Sistema Operacional | **Windows** |
+    | Tipo | **(Somente SO)** |
+    | Camada | **Padrão** |  
+    | Instância | **A2: 2 núcleos(s), 3,5 GB de RAM, 135 GB de armazenamento temporário** |
 
    ![Captura de tela da área de configuração de VM na página Web de estimativa do Azure Pricing Calculator. Os exemplos destacados de valores de propriedade de configuração de VM inseridos pelo usuário indicam como especificar uma configuração de VM em uma estimativa do Azure Pricing Calculator.](../images/1902.png)
 
@@ -73,25 +71,15 @@ Nesta tarefa, estimaremos o custo de uma infraestrutura de amostra usando o Azur
 
 11. Adicione um nome para sua configuração de Gateway de Aplicativo. Este passo a passo usa o nome **Gateway de Aplicativo: VM do Windows**. Modifique a configuração padrão do Gateway de Aplicativo adicionando os seguintes detalhes.
 
-    | Região | Camada | Tamanho |
-    | ------ | ---- | ---- |
-    | Norte da Europa | Básico | Pequeno |
-    | | |
-
-    | Instâncias | Horas |
-    | ------- | ------- |
-    | 1 | 365 |
-    | | |
-
-    | Dados processados |
-    | -------------- |
-    | 50 GB |
-    | | |
-
-    | Zona 1: América do Norte, Europa |
-    | ----------------------------- |
-    | 50 GB |
-    | | |
+    | Configurações | Valor |
+    | -- | -- |
+    | Região | **Norte da Europa** |
+    | Camada | **Básico** |
+    | Tamanho | **Pequeno** |
+    | Instâncias | **1** |  
+    | Horas | **365** |
+    | Dados processados | **50 GB** |
+    | Zona 1: América do Norte, Europa | **50 GB**|
 
     ![Captura de tela da área de configuração do gateway de aplicativo na página Web de estimativa do Azure Pricing Calculator.](../images/1909.png)
 

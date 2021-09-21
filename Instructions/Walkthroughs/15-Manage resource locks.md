@@ -3,25 +3,30 @@ wts:
     title: '15 – Gerenciar bloqueios de recursos (5 min)'
     module: 'Módulo 05: Descreva os recursos de identidade, governança, privacidade e conformidade'
 ---
-# 15 – Gerenciar bloqueios de recursos
+# 15 – Gerenciar bloqueios de recursos (5 min)
 
 Neste passo a passo, vamos adicionar um bloqueio ao grupo de recursos e testar a exclusão do grupo de recursos. Os bloqueios podem ser aplicados em uma assinatura de grupos de recursos ou recursos individuais para evitar exclusão acidental ou modificação de recursos críticos.  
 
-# Tarefa 1: Criar um grupo de recursos (5 min)
+# Tarefa 1: Criar um grupo de recursos 
 
 Nesta tarefa, criaremos um grupo de recursos para este exercício. 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Na barra de **Pesquisa** na parte superior do portal, procure **Grupos de recursos**. 
+2. Na folha **Todos os serviços**, procure e selecione **Grupos de recursos** e, em seguida, selecione **+ Adicionar**, **+ Criar** ou **+ Novo**.
 
-3. Depois, clique em **+Adicionar +Novo +Criar** 
+3. Crie novo grupo de recursos. Clique em **Criar** quando terminar. 
 
     | Configuração | Valor |
     | -- | -- |
-    | Assinatura | **Usar sua assinatura** |
-    | Nome | **myRGLocks** |
+    | Assinatura | **escolha sua assinatura** |
+    | Grupo de recursos | **myRGLocks** |
     | Região | **(EUA) Leste dos EUA** |
+    | | |
+
+4. Clique em **Revisar + criar** e, em seguida, clique em **Criar**.
+
+5. **Atualize** a página do grupo de recursos e clique na entrada que representa o grupo de recursos recém-criado.
     
 
 # Tarefa 2:  Adicionar um bloqueio ao grupo de recursos e testar a exclusão
@@ -40,7 +45,7 @@ Nesta tarefa, adicionaremos um bloqueio de recurso ao grupo de recursos e testar
 
     | Configuração | Valor |
     | -- | -- |
-    | Nome do bloqueio | **RGLock** |
+    | Nome do bloqueio | '''RGLock''’ |
     | Tipo de bloqueio | **Excluir** |
     | | |
 
