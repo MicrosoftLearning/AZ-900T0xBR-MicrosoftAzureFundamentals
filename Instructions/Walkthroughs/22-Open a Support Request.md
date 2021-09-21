@@ -3,11 +3,11 @@ wts:
     title: '22 – Abrir uma solicitação de suporte (5 min)'
     module: 'Atualmente não utilizado no exame atual'
 ---
-# 22 – Abrir uma solicitação de suporte
+# 22 – Abrir uma solicitação de suporte (5 min)
 
 Neste passo a passo, veremos as opções de plano de suporte disponíveis e, em seguida, praticaremos a criação e o monitoramento de uma nova solicitação de suporte.
 
-# Tarefa 1: Ver as opções de plano de suporte disponíveis e uma solicitação de suporte técnico (5 min)
+# Tarefa 1: Visualizar as opções de plano de suporte disponíveis e uma solicitação de suporte técnico
 
 1. Entre no [**portal do Azure**](https://portal.azure.com).
 
@@ -44,13 +44,12 @@ Neste passo a passo, veremos as opções de plano de suporte disponíveis e, em 
     | Resumo | **O preço mensal não está correto** |
     | Tipo de problema | **Preço** |
     | Subtipo de problema | **Ajude-me a descobrir os preços dos serviços** |    
-    | | |
 
 2. Clique em **Avançar: Soluções** e leia as soluções recomendadas.
 
 3. Clique em **Avançar: Detalhes**.  Ao enviar uma solicitação de suporte real, você deve fornecer o máximo de informações possível para permitir uma resolução rápida do problema. 
 
-    **Observação:** Vamos parar neste ponto. Você sabe como enviar uma solicitação de suporte?
+    **Observação:** Vamos PARAR neste ponto. Você sabe como enviar uma solicitação de suporte?
 
 4. Clique em **Todas as solicitações de suporte**. É aqui que suas solicitações de suporte são mostradas. Um email também é enviado para o seu endereço de email contendo detalhes da solicitação de suporte.
 

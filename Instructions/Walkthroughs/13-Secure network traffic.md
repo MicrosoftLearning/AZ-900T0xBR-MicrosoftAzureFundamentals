@@ -3,46 +3,43 @@ wts:
     title: '13 – Tráfego de rede seguro (10 min)'
     module: 'Módulo 04: Descreva a segurança geral e os recursos de segurança da rede'
 ---
-# 13 – Tráfego de rede seguro
+# 13 – Tráfego de rede seguro (10 min)
 
 Neste passo a passo, configuraremos um grupo de segurança de rede.
 
-# Tarefa 1: Criar uma máquina virtual (10 min)
+# Tarefa 1: Criar uma máquina virtual
 
 Nesta tarefa, criaremos uma máquina virtual Windows Server 2019 Datacenter. 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Na folha **Todos os serviços**, procure e selecione **Máquinas virtuais** e, em seguida, clique em **+ Adicionar**.
+2. Na folha **Todos os serviços**, procure e selecione **Máquinas virtuais** e, em seguida, selecione **+ Adicionar, + Criar, + Nova** Máquina Virtual.
 
 3. Na guia **Básico**, preencha as seguintes informações (mantenha os padrões para todo o resto):
 
     | Configurações | Valores |
     |  -- | -- |
-    | Assinatura | **Escolha sua assinatura**|
-    | Grupo de recursos | **myRGSecure** (criar novo) |
+    | Assinatura | **Use a padrão** |
+    | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome da máquina virtual | **SimpleWinVM** |
-    | Local | **(EUA) Leste dos EUA**|
-    | Imagem | **Windows Server 2019 Datacenter**|
+    | Região | **(EUA) Leste dos EUA**|
+    | Imagem | **Windows Server 2019 Datacenter Gen 1**|
     | Tamanho | **Standard D2s v3**|
     | Nome de usuário da conta de administrador | **azureuser** |
     | Senha da conta de administrador | **Pa$$w0rd1234**|
     | Regras da porta de entrada | **Nenhum**|
-    | | |
 
 4. Alterne para a guia **Rede** e defina as seguintes configurações:
 
     | Configurações | Valores |
     | -- | -- |
     | Grupo de segurança de rede NIC | **Nenhum**|
-    | | |
 
 5. Alterne para a guia **Gerenciamento** e, em sua seção **Monitoramento**, selecione a seguinte configuração:
 
     | Configurações | Valores |
     | -- | -- |
     | Diagnóstico de inicialização | **Desabilitar**|
-    | | |
 
 6. Mantenha os padrões restantes e clique no botão **Revisar + criar** na parte inferior da página.
 
@@ -60,17 +57,16 @@ Nesta tarefa, criaremos uma máquina virtual Windows Server 2019 Datacenter.
 
 Nesta tarefa, criaremos um grupo de segurança de rede e o associaremos ao adaptador de rede.
 
-1. Na folha **Todos os serviços**, procure e selecione **Grupos de segurança de rede** e, em seguida, clique em **+ Adicionar**.
+1. Na folha **Todos os serviços**, procure e selecione **Grupos de segurança de rede** e, em seguida, selecione **+ Adicionar, + Criar, + Novo**
 
 2. Na guia **Básico** da folha **Criar grupo de segurança de rede**, especifique as seguintes configurações.
 
     | Configuração | Valor |
     | -- | -- |
-    | Assinatura | **escolha sua assinatura** |
-    | Grupo de recursos | **myRGSecure** |
+    | Assinatura | **Use a assinatura padrão** |
+    | Grupo de recursos | **Selecionar o padrão na lista suspensa** |
     | Nome | **myNSGSecure** |
     | Região | **(EUA) Leste dos EUA**  |
-    | | |
 
 3. Clique em **Revisar + criar** e, em seguida, clique em **Criar** após a validação.
 
@@ -82,17 +78,18 @@ Nesta tarefa, criaremos um grupo de segurança de rede e o associaremos ao adapt
 
 # Tarefa 3: Configurar uma regra de porta de segurança de entrada para permitir o RDP
 
-Nesta tarefa, permitiremos o tráfego do RDP para a máquina virtual configurando uma regra de porta de segurança de entrada. 
+Nesta tarefa, vamos permitir o tráfego do RDP para a máquina virtual configurando uma regra de porta de segurança de entrada. 
 
 1. No portal do Azure, navegue até a folha da máquina virtual **SimpleWinVM**. 
 
 2. No painel **Visão geral**, clique em **Conectar**.
 
-3. Tente se conectar à máquina virtual usando RDP. Por padrão, o grupo de segurança de rede não permite RDP. Feche a janela de erro. 
+3. Tente se conectar à máquina virtual: selecione o RDP, baixe e execute o arquivo RDP. Por padrão, o grupo de segurança de rede não permite RDP. Feche a janela de erro. 
+
 
     ![Captura de tela da mensagem de erro informando que a conexão com a máquina virtual falhou.](../images/1201.png)
 
-4. Na folha da máquina virtual, role para baixo até a seção **Configurações**, clique em **Rede** e observe as regras de entrada para o grupo de segurança de rede **myNSGSecure (conectado ao adaptador de rede: myVMNic)** nega todo o tráfego de entrada, exceto o tráfego dentro da rede virtual e investigações do balanceador de carga.
+4. Na folha da máquina virtual, role para baixo até a seção **Configurações**. Selecione **Rede** e observe as regras de entrada para o grupo de segurança de rede **myNSGSecure (conectado ao adaptador de rede: myVMNic)**. Ele nega todo tráfego de entrada, exceto o tráfego dentro da rede virtual e as investigações do balanceador de carga.
 
 5. Na guia **Regras de porta de entrada**, clique em **Adicionar regra de porta de entrada**. Clique em **Adicionar** quando terminar. 
 
@@ -106,9 +103,8 @@ Nesta tarefa, permitiremos o tráfego do RDP para a máquina virtual configurand
     | Ação | **Permitir** |
     | Prioridade | **300** |
     | Nome | **AllowRDP** |
-    | | |
 
-6. Aguarde até que a regra seja provisionada e tente novamente o RDP na máquina virtual. Desta vez, você deve ter sucesso. Lembre-se de que o usuário é **azureuser** e a senha é **Pa$$w0rd1234**.
+6. Selecione **Adicionar** e espere a regra ser provisionada. Tente conectar de novo o RDP à máquina virtual voltando a **Conectar**. Desta vez, você deve ter êxito. Lembre-se de que o usuário é **azureuser** e a senha é **Pa$$w0rd1234**.
 
 # Tarefa 4: Configurar uma regra de porta de segurança de saída para negar o acesso à Internet
 
@@ -122,7 +118,7 @@ Nesta tarefa, criaremos uma regra de porta de saída do NSG que negará o acesso
 
     **Observação**: Agora vamos configurar uma regra para negar o acesso de saída à Internet. 
 
-4. No portal do Azure, navegue de volta para a folha da máquina virtual **SimpleWinVM**. 
+4. De volta ao portal do Azure, retorne à folha da máquina virtual **SimpleWinVM**. 
 
 5. Em **Configurações**, clique em **Rede** e em **Regras de porta de saída**.
 
@@ -141,9 +137,8 @@ Nesta tarefa, criaremos uma regra de porta de saída do NSG que negará o acesso
     | Ação | **Negar** |
     | Prioridade | **4000** |
     | Nome | **DenyInternet** |
-    | | |
 
-8. Retorne à sua sessão do RDP. 
+8. Selecione **Adicionar** Devolva os RDPs à VM. 
 
 9. Navegue para **https://www.microsoft.com**. A página não deve ser exibida. Pode ser necessário trabalhar com pop-ups adicionais de segurança aprimorada do Internet Explorer.  
 
