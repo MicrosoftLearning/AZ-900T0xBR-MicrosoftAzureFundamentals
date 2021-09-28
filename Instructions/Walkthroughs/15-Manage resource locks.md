@@ -7,41 +7,22 @@ wts:
 
 Neste passo a passo, vamos adicionar um bloqueio ao grupo de recursos e testar a exclusão do grupo de recursos. Os bloqueios podem ser aplicados em uma assinatura de grupos de recursos ou recursos individuais para evitar exclusão acidental ou modificação de recursos críticos.  
 
-# Tarefa 1: Criar um grupo de recursos 
 
-Nesta tarefa, criaremos um grupo de recursos para este exercício. 
-
-1. Entre no [portal do Azure](https://portal.azure.com).
-
-2. Na folha **Todos os serviços**, procure e selecione **Grupos de recursos** e, em seguida, selecione **+ Adicionar**, **+ Criar** ou **+ Novo**.
-
-3. Crie novo grupo de recursos. Clique em **Criar** quando terminar. 
-
-    | Configuração | Valor |
-    | -- | -- |
-    | Assinatura | **escolha sua assinatura** |
-    | Grupo de recursos | **myRGLocks** |
-    | Região | **(EUA) Leste dos EUA** |
-    | | |
-
-4. Clique em **Revisar + criar** e, em seguida, clique em **Criar**.
-
-5. **Atualize** a página do grupo de recursos e clique na entrada que representa o grupo de recursos recém-criado.
-    
-
-# Tarefa 2:  Adicionar um bloqueio ao grupo de recursos e testar a exclusão
+# Tarefa 1:  Adicionar um bloqueio ao grupo de recursos e testar a exclusão
 
 Nesta tarefa, adicionaremos um bloqueio de recurso ao grupo de recursos e testaremos a exclusão do grupo. 
 
-1. No portal do Azure, navegue até o grupo de recursos recém-criado **myRGLocks**.
+1. Entre no [portal do Azure](https://portal.azure.com).
 
-2. Você pode aplicar um bloqueio a uma assinatura, grupo de recursos ou recurso individual para evitar exclusão acidental ou modificação de recursos críticos. 
+2. No portal do Azure, navegue até o grupo de recursos **myRGLocks**.
 
-3. Na seção **Configurações**, clique em **Bloqueios** e em **+ Adicionar**. 
+3. Você pode aplicar um bloqueio a uma assinatura, grupo de recursos ou recurso individual para evitar exclusão acidental ou modificação de recursos críticos. 
+
+4. Na seção **Configurações**, clique em **Bloqueios** e em **+ Adicionar**. 
 
     ![Captura de tela do grupo de recursos myRGLocks com exibição do painel Bloqueios.](../images/1601.png)
 
-4. Configure o novo bloqueio. Quando terminar, clique em **OK**. 
+5. Configure o novo bloqueio. Quando terminar, clique em **OK**. 
 
     | Configuração | Valor |
     | -- | -- |
@@ -49,11 +30,11 @@ Nesta tarefa, adicionaremos um bloqueio de recurso ao grupo de recursos e testar
     | Tipo de bloqueio | **Excluir** |
     | | |
 
-5. Clique em **Visão geral** e, em seguida, em **Excluir grupo de recursos**. Digite o nome do grupo de recursos e clique em **OK**. Você recebe uma mensagem de erro informando que o grupo de recursos está bloqueado e não pode ser excluído.
+6. Clique em **Visão geral** e, em seguida, em **Excluir grupo de recursos**. Digite o nome do grupo de recursos e clique em **OK**. Você recebe uma mensagem de erro informando que o grupo de recursos está bloqueado e não pode ser excluído.
 
     ![Falha na captura de tela dos bloqueios de exclusão.](../images/1602.png)
 
-# Tarefa 3: Testar a exclusão de um membro do grupo de recursos
+# Tarefa 2: Testar a exclusão de um membro do grupo de recursos
 
 Nesta tarefa, testaremos se o bloqueio de recursos protege uma conta de armazenamento no grupo de recursos. 
 
@@ -85,7 +66,7 @@ Nesta tarefa, testaremos se o bloqueio de recursos protege uma conta de armazena
 
     **Observação**: Embora não tenhamos criado um bloqueio especificamente para a conta de armazenamento, criamos um bloqueio no nível do grupo de recursos, que contém a conta de armazenamento. Como tal, este bloqueio de nível *pai* nos impede de excluir o recurso e a conta de armazenamento herda o bloqueio do pai.
 
-# Tarefa 4: Remover o bloqueio de recursos
+# Tarefa 3: Remover o bloqueio de recursos
 
 Nesta tarefa, vamos remover o bloqueio de recursos e testar. 
 
@@ -99,4 +80,4 @@ Nesta tarefa, vamos remover o bloqueio de recursos e testar.
 
 Parabéns! Você criou um grupo de recursos, adicionou um bloqueio ao grupo de recursos e testou a exclusão, testou a exclusão de um recurso no grupo de recursos e removeu o bloqueio de recursos. 
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.

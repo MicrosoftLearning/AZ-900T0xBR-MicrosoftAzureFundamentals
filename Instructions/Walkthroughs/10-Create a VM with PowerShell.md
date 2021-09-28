@@ -11,8 +11,7 @@ Neste passo a passo, vamos configurar o Cloud Shell, usar o módulo Azure PowerS
 
 Nesta tarefa, vamos configurar o Cloud Shell. 
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-
+1. Entre no [portal do Azure](https://portal.azure.com). **Você encontra as credenciais de logon na guia de recursos (bem ao lado desta guia de Instruções!)**
 2. No portal do Azure, abra o **Azure Cloud Shell** clicando no ícone no canto superior direito do portal do Azure.
 
     ![Captura de tela do ícone do Azure Cloud Shell no portal do Azure.](../images/1002.png)
@@ -117,4 +116,4 @@ Nesta tarefa, revisaremos as recomendações do Assistente do Azure para nossa m
 
 Parabéns! Você configurou o Cloud Shell, criou uma máquina virtual usando o PowerShell, praticou com comandos do PowerShell e viu as recomendações do Advisor.
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.

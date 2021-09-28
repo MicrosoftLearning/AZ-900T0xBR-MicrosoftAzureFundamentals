@@ -26,7 +26,7 @@ Nesta tarefa, criaremos uma nova instância de contêiner para o aplicativo Web.
 	| Região | **(EUA) Leste dos EUA** |
 	| Origem da imagem| **Docker Hub ou outro registro**|
 	| Tipo de imagem| **Público**|
-	| Imagem| **mcr.microsoft.com/azuredocs/aci-helloworld**|
+	| Imagem| **microsoft/aci-helloworld**|
 	| Tipo de OS| **Linux** |
 	| Tamanho| ***Mantenha o padrão***|
 
@@ -66,4 +66,4 @@ Nesta tarefa, verificamos se a instância de contêiner está em execução, gar
 
 **Parabéns!** Você usou o Portal do Azure para implantar, com êxito, um aplicativo em contêiner nas Instâncias de Contêiner do Azure.
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
