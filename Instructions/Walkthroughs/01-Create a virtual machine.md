@@ -22,10 +22,11 @@ Neste passo a passo, criaremos uma máquina virtual no portal do Azure, conectar
     | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome da máquina virtual | **myVM** |
     | Região | **(EUA) Leste dos EUA**|
-    | Imagem | **Windows Server 2019 Datacenter – 1ª geração**|
+    | Opções de disponibilidade | Nenhuma opção de redundância de infraestrutura exigida|
+    | Imagem | **Windows Server 2019 Datacenter – Gen2**|
     | Tamanho | **Standard D2s v3**|
     | Nome de usuário da conta de administrador | **azureuser** |
-    | Senha da conta de administrador | **Pa$$w0rd1234**|
+    | Senha da conta de administrador (digite com atenção!) | **Pa$$w0rd1234**|
     | Regras da porta de entrada - | **Permitir portas selecionadas**|
     | Selecionar portas de entrada | **RDP (3389)** e **HTTP (80)**| 
 
@@ -47,9 +48,9 @@ Neste passo a passo, criaremos uma máquina virtual no portal do Azure, conectar
 
 Nesta tarefa, vamos nos conectar à nova máquina virtual usando RDP (Protocolo de Área de Trabalho Remota). 
 
-1. Procure **myVM** e selecione sua nova máquina virtual.
+1. Clique no ícone de sino na barra de ferramentas superior azul e selecione “Ir para o recurso” quando a implantação for concluída. 
 
-    **Observação**: Você também pode usar o link **Ir para o recurso** na página de implantação ou o link para o recurso na área de **Notificações**.
+    **Observação**: você também pode usar o link **Ir para o recurso** na página de implantação 
 
 2. Na folha **Visão geral** da máquina virtual, selecione o botão **Conectar** e escolha **RDP** na lista suspensa.
 
@@ -75,7 +76,7 @@ A nova Máquina Virtual (myVM) será iniciada no Laboratório. Feche o Gerenciad
 
 Nesta tarefa, instale a função de Servidor Web no servidor da máquina virtual recém-criada e verifique se a página de boas-vindas padrão do IIS é exibida. 
 
-1. Na máquina virtual, inicie o PowerShell: pesquise **PowerShell** na barra de pesquisa, clique com o botão direito em **Windows PowerShell** e selecione **Executar como administrador**.
+1. Na máquina virtual que foi aberta, inicie o PowerShell: pesquise **PowerShell** na barra de pesquisa, clique com o botão direito em **Windows PowerShell** e selecione **Executar como administrador**.
 
     ![Captura de tela da área de trabalho da máquina virtual com o botão Iniciar clicado e o PowerShell selecionado com Executar como administrador destacado.](../images/0105.png)
 
@@ -85,7 +86,7 @@ Nesta tarefa, instale a função de Servidor Web no servidor da máquina virtual
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
     ```
   
-3. Quando concluído, um prompt vai aparecer informando o **Êxito**, com valor **True**. Você não precisa reiniciar a máquina virtual para concluir a instalação. Feche a conexão do RDP à VM selecionando o **x** na barra azul no centro superior da máquina virtual. 
+3. Quando concluído, um prompt vai aparecer informando o **Êxito**, com valor **True**. Você não precisa reiniciar a máquina virtual para concluir a instalação. Feche a conexão do RDP à VM selecionando o **x** na barra azul no centro superior da máquina virtual. Você também pode minimizar selecionando **-** na barra azul na parte superior central.
 
     ![Captura de tela do prompt de comando do Windows PowerShell com o comando Install-WindowsFeature -name Web-Server -IncludeManagementTools concluído com êxito e saída informando que foi bem-sucedido.](../images/0106.png)
 
@@ -100,4 +101,4 @@ Nesta tarefa, instale a função de Servidor Web no servidor da máquina virtual
 **Parabéns!** Você criou uma VM executando um servidor Web acessível por meio do endereço IP público. Se você tivesse um aplicativo Web para hospedar, poderia implantar arquivos de aplicativo na máquina virtual e hospedá-los para acesso público na máquina virtual implantada.
 
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para verificar se a exclusão foi concluída com êxito. 
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.

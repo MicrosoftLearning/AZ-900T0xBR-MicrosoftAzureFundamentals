@@ -61,6 +61,6 @@ Nesta tarefa, testaremos o aplicativo Web.
 
 5. Volte para a folha **Visão geral** do seu aplicativo Web e role para baixo. Você vai perceber vários gráficos acompanhando a Entrada/Saída de Dados e Solicitações. Ao repetir a etapa 4 algumas vezes, a telemetria correspondente será exibida nos gráficos. Isso inclui o número de solicitações e o tempo médio de resposta. 
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
 
 Parabéns! Você acaba de criar um Serviço de Aplicativo do Azure com sucesso.

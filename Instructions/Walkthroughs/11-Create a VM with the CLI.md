@@ -23,7 +23,7 @@ Nesta tarefa, vamos configurar o Cloud Shell e usar a CLI do Azure para criar um
 
 5. Na tela de configurações avançadas, preencha os campos a seguir e depois selecione Criar Armazenamento:
     - Grupo de Recursos: **Criar novo grupo de recursos**
-    - Conta de Armazenamento: Criar nova conta e usar um nome globalmente exclusivo (ex.: cloudshellstoragemystorage)
+    - Conta de Armazenamento: crie uma conta nova e use um nome globalmente exclusivo (ex.: cloudshellxyzstorage)
     - Compartilhamento de Arquivos: Crie um novo e dê a ele o nome cloudshellfileshare
 
 
@@ -35,13 +35,8 @@ Nesta tarefa, usaremos a CLI do Azure para criar um grupo de recursos e uma máq
 
     ![Captura de tela do Azure Cloud Shell do portal do Azure com a lista suspensa Bash destacada.](../images/1002a.png)
 
-2. Na sessão do Bash, no painel do Cloud Shell, crie um novo grupo de recursos. 
 
-    ```cli
-    az group create --name myRGCLI --location EastUS
-    ```
-
-3. Verifique se o grupo de recursos foi criado.
+2. Verifique o grupo de recursos sendo usado digitando o seguinte comando.
 
     ```cli
     az group list --output table
@@ -122,4 +117,4 @@ Nesta tarefa, revisaremos as recomendações do Assistente do Azure.
 
 Parabéns! Você configurou o Cloud Shell, criou uma máquina virtual usando a CLI do Azure, praticou com os comandos da CLI do Azure e viu as recomendações do Assistente.
 
-**Observação**: Para evitar custos adicionais, você pode remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
+**Observação**: Para evitar custos adicionais, você tem a opção de remover este grupo de recursos. Procure grupos de recursos, clique em seu grupo de recursos e, em seguida, clique em **Excluir grupo de recursos**. Verifique o nome do grupo de recursos e clique em **Excluir**. Monitore as **Notificações** para ver como a exclusão está ocorrendo.
