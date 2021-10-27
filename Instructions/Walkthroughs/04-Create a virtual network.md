@@ -25,7 +25,7 @@ Nesta tarefa, você criará uma rede virtual.
     | Região | **(EUA) Leste dos EUA** |
     
    
-4. Clique no botão **Revisar + criar**. Certifique-se de que a validação seja aprovada.
+4. Clique no botão **Revisar + criar**. Certifique-se de que a validação seja aprovada. Depois clique em criar para implantar o recurso.
 
 
 # Tarefa 2: Criar duas máquinas virtuais

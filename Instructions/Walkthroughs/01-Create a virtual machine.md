@@ -80,7 +80,7 @@ Nesta tarefa, instale a função de Servidor Web no servidor da máquina virtual
 
     ![Captura de tela da área de trabalho da máquina virtual com o botão Iniciar clicado e o PowerShell selecionado com Executar como administrador destacado.](../images/0105.png)
 
-2. No PowerShell, instale o recurso **Web-Server** na máquina virtual executando o seguinte comando: 
+2. No PowerShell, instale o recurso **Web-Server** na máquina virtual executando o seguinte comando: (Cole o comando e pressione ENTER para que a instalação comece).
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
