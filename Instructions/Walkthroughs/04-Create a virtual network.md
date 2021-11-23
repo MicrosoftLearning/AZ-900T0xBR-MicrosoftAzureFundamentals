@@ -11,6 +11,8 @@ Neste passo a passo, vamos criar uma rede virtual, implantar duas máquinas virt
 
 Nesta tarefa, você criará uma rede virtual. 
 
+Observação: Antes de começar as atividades de laboratório, desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows
+
 1. Entre no portal do Azure em <a href="https://portal.azure.com" target="_blank"><span style="color: #0066cc;" color="#0066cc">https://portal.azure.com</span></a>
 
 2. Na folha **Todos os serviços**, procure e selecione **Máquinas virtuais** e, em seguida, selecione **+ Adicionar, + Criar, + Novo**. 
@@ -42,7 +44,7 @@ Nesta tarefa, criaremos duas máquinas virtuais na rede virtual.
    | Grupo de recursos |  **Selecionar o padrão na lista suspensa** |
    | Nome da máquina virtual | **vm1**|
    | Região | **(EUA) Leste dos EUA** |
-   | Imagem | **Windows Server 2019 Datacenter – Gen1** |
+   | Imagem | **Windows Server 2019 Datacenter – Gen2** |
    | Nome do usuário| **azureuser** |
    | Senha| **Pa$$w0rd1234** |
    | Portas de entrada públicas| Selecione **Permitir as portas selecionadas**  |
@@ -83,6 +85,8 @@ Nesta tarefa, vamos testar se as máquinas virtuais podem se comunicar (executar
 5. Na janela **Segurança do Windows**, digite o nome de usuário **azureuser** e a senha **Pa$$w0rd1234** e clique em **OK**.
 
 6. Você pode receber um aviso de certificado durante o processo de logon. Clique em **Sim** para criar a conexão e se conectar à VM implantada. Você deve se conectar com sucesso. Feche o Windows Server e as janelas pop-up do Painel. Deve ser exibido um plano de fundo azul do Windows. Agora você está na máquina virtual.
+
+Observação: Na máquina virtual criada recentemente, desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows
 
 7. Abra o PowerShell na máquina virtual selecionando o botão **Iniciar**. Em Pesquisar, insira **PowerShell** e clique com o botão direito em **Windows PowerShell** para **Executar como administrador**
 
