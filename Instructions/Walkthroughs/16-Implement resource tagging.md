@@ -23,7 +23,7 @@ Nesta tarefa, vamos configurar a política **Exigir uma marca nos recursos** e a
 
    ![Captura de tela do painel Definições disponíveis com Exigir uma marca nos recursos selecionados.](../images/1701.png)
    
-6. Na guia **Parâmetros**, digite **Empresa** para o nome da marca. E **Contoso** para o Valor. Clique em **Revisar + criar** e, em seguida, em **Criar**.
+6.  Na guia **Parâmetros**, digite **Empresa** para o nome da marca. Clique em **Revisar + criar** e, em seguida, em **Criar**.
 
     ![Captura de tela do painel Atribuir política com o nome da marca preenchido.](../images/1702.png)
 

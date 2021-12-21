@@ -21,8 +21,8 @@ Nesta tarefa, criaremos um hub IoT.
     |--|--|
     | Assinatura | **Mantenha a padrão fornecida** |
     | Grupo de Recursos | **Criar novo grupo de recursos** |
-    | Região | **Leste dos EUA** |
     | Nome do hub IoT | **my-hub-groupxxxxx** |
+    | Região | **Leste dos EUA** |
 
     **Observação** - Lembre-se de alterar o **xxxxx** para ter um **Nome do Hub IoT** exclusivo.
 
@@ -42,7 +42,7 @@ Nesta tarefa, adicionaremos um dispositivo IoT ao Hub IoT.
 
 	![Captura de tela da implantação em andamento e notificações de implantação bem-sucedida no portal do Azure.](../images/0601.png)
 
-2. Para adicionar um novo dispositivo IoT, role para baixo até a seção **Explorers** e clique em **Dispositivos IoT**. Depois, selecione **+ Adicionar, + Criar, + Novo**.
+2. Para adicionar um novo dispositivo IoT, role para baixo até a seção **Gerenciamento de dispositivos** e clique em **Dispositivos**. Em seguida, clique em **+ Adicionar dispositivo**.
 
 	![Captura de tela do painel de dispositivos IoT, destacado na folha de navegação do Hub IoT, no portal do Azure. O botão Novo é destacado para ilustrar como adicionar uma nova identidade do dispositivo IoT ao Hub IoT.](../images/0602.png)
 

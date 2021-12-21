@@ -28,7 +28,7 @@ Nesta tarefa, você criará um Aplicativo Web do Serviço de Aplicativo do Azure
     | Sistema Operacional | **Linux** |
     | Região | **Leste dos EUA** |
     
-    **Observação** - Lembre-se de alterar o **xxxx** para que o Aplicativo Web tenha um nome exclusivo.
+    **Observação:** Lembre-se de alterar o **xxxx** para que o Aplicativo Web tenha um nome exclusivo.
 
 4. Clique em **Avançar > Docker** e configure as informações do contêiner.  
 
@@ -37,9 +37,9 @@ Nesta tarefa, você criará um Aplicativo Web do Serviço de Aplicativo do Azure
     | Opções | **Contêiner único** |
     | Origem da imagem | **Docker Hub** |
     | Tipo de acesso | **Público** |
-    | Imagem e marca | **microsoft/aci-helloworld** |
+    | Imagem e marca | **mcr.microsoft.com/azuredocs/aci-helloworld** |
     
- **Observação** O comando de inicialização é opcional e não é necessário neste exercício.
+ **Observação:** O comando de inicialização é opcional e não é necessário neste exercício.
 
 5. Clique em **Revisar + criar** e, em seguida, clique em **Criar**. 
 
