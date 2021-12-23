@@ -73,7 +73,7 @@ Nesta tarefa, usaremos a função Webhook + API para exibir uma mensagem quando 
 
     ![Captura de tela de um URL de função destacado e um nome de usuário de amostra anexado na barra de endereços de um navegador Web. A mensagem Olá e o nome de usuário também são destacados para ilustrar a saída da função na janela principal do navegador.](../images/0707.png)
 
-10. Ao pressionar o enter, sua função é executada e todas as invocações são rastreadas. Para visualizar os rastreamentos, volte à folha **HttpTrigger1 \| Código + Teste** do Portal e clique em **Monitorar**. **Configure** o Application Insights selecionando a função escolhida e a região. Selecione **Criar**.
+10. Ao pressionar o enter, sua função é executada e todas as invocações são rastreadas. Para visualizar os rastreamentos, volte à folha **HttpTrigger1 \| Código + Teste** do Portal e clique em **Monitorar**. Você pode **configurar** o Application Insights selecionando o registro de data e hora e clique em **Executar consulta no Application Insights**.
 
     ![Captura de tela de um log de informações de rastreamento resultante da execução da função dentro do editor de funções no portal do Azure.](../images/0709.png) 
 

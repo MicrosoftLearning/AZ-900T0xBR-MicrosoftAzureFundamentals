@@ -25,9 +25,10 @@ Nesta tarefa, criaremos um banco de dados SQL baseado no banco de dados de amost
     | Nome do banco de dados| **db1** | 
     | Servidor | Selecione **Criar novo** (Uma nova barra lateral será aberta à direita)|
     | Nome do servidor | **sqlserverxxxx** (deve ser exclusivo) | 
+    | Local | **(EUA) Leste dos EUA** |
+    | Método de autenticação | **Usar a autenticação de SQL** |
     | Logon de administrador do servidor | **sqluser** |
     | Senha | **Pa$$w0rd1234** |
-    | Local | **(EUA) Leste dos EUA** |
     | Clique em  | **OK** |
 
    ![Captura de tela do painel Servidor e do painel Novo Servidor com os campos preenchidos de acordo com a tabela e com os botões Revisar + criar e OK realçados.](../images/0501.png)
@@ -46,7 +47,7 @@ Nesta tarefa, criaremos um banco de dados SQL baseado no banco de dados de amost
 
     | Configuração | Valor | 
     | --- | --- |
-    | Azure Defender para SQL| **Agora não** |
+    | Microsoft Defender para SQL| **Agora não** |
     
 6. Vá para a guia **Configurações adicionais**. Usaremos o banco de dados de amostra AdventureWorksLT.
 

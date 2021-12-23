@@ -99,7 +99,7 @@ Nesta tarefa, revisaremos as recomendações do Assistente do Azure.
 
 1. Na folha **Todos os serviços**, procure e selecione **Assistente**. 
 
-2. Na folha **Assistente**, selecione **Visão geral**. As recomendações de aviso são agrupadas por Alta disponibilidade, Segurança, Desempenho e Custo. 
+2. Na folha **Assistente**, selecione **Visão geral**. As recomendações de aviso são agrupadas por Confiabilidade, Segurança, Desempenho e Custo. 
 
     ![Captura de tela da página Visão geral do Assistente. ](../images/1103.png)
 
