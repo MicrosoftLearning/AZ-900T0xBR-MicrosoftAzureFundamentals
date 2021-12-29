@@ -23,11 +23,11 @@ Nesta tarefa, vamos configurar a política **Exigir uma marca nos recursos** e a
 
    ![Captura de tela do painel Definições disponíveis com Exigir uma marca nos recursos selecionados.](../images/1701.png)
    
-6.  Na guia **Parâmetros**, digite **Empresa** para o nome da marca. Clique em **Revisar + criar** e, em seguida, em **Criar**.
+6.  Na guia **Parâmetros**, digite **Empresa: Contoso** para o nome do par chave/valor de marca. Clique em **Revisar + criar** e, em seguida, em **Criar**.
 
     ![Captura de tela do painel Atribuir política com o nome da marca preenchido.](../images/1702.png)
 
-7. A atribuição de política de **Exigir uma marca nos recursos** agora está em vigor. Quando um recurso é criado, ele deve incluir uma marca com a chave da empresa.
+7. A atribuição de política de **Exigir uma marca nos recursos** agora está em vigor. Quando um recurso é criado, ele deve incluir uma marca com a chave Empresa: Contoso.
    **Observação – você precisa esperar até 30 minutos para que a Política seja aplicada.** 
 
    ![Captura de tela do painel Política – Atribuições com a atribuição de locais permitida realçada.](../images/1703.png)
@@ -62,7 +62,7 @@ Nesta tarefa, criaremos contas de armazenamento para testar a marcação necess�
 
     | Configuração | Valor | 
     | --- | --- |
-    | Nome da marca | **Empresa** (pode não estar na lista suspensa) |
+    | Nome da marca | **Empresa: Contoso** (pode não estar na lista suspensa) |
 
 6. Clique em **Revisar + criar** e verifique se a validação foi bem-sucedida. Clique em **Criar** para implantar a conta de armazenamento. 
 

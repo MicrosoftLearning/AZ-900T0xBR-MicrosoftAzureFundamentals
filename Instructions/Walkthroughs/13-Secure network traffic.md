@@ -23,7 +23,7 @@ Nesta tarefa, criaremos uma máquina virtual Windows Server 2019 Datacenter.
     | Grupo de recursos | **Criar novo grupo de recursos** |
     | Nome da máquina virtual | **SimpleWinVM** |
     | Região | **(EUA) Leste dos EUA**|
-    | Imagem | **Windows Server 2019 Datacenter Gen 1**|
+    | Imagem | **Windows Server 2019 Datacenter Gen 2**|
     | Tamanho | **Standard D2s v3**|
     | Nome de usuário da conta de administrador | **azureuser** |
     | Senha da conta de administrador | **Pa$$w0rd1234**|
@@ -72,7 +72,7 @@ Nesta tarefa, criaremos um grupo de segurança de rede e o associaremos ao adapt
 
 4. Depois que o NSG for criado, clique em **Ir para o recurso**.
 
-5. Em **Configurações**, clique em **Adaptadores de rede** e em **+ Associar**.
+5. Em **Configurações**, clique em **Adaptadores de rede** e em **Associar**.
 
 6. Selecione o adaptador de rede que você identificou na tarefa anterior. 
 
@@ -130,7 +130,7 @@ Nesta tarefa, criaremos uma regra de porta de saída do NSG que negará o acesso
     | -- | -- |
     | Fonte | **Qualquer um**|
     | Intervalos de portas de origem | **\*** |
-    | Destino | **Marca de serviço** |
+    | Destino | **Marca de Serviço** |
     | Marca de serviço de destino | **Internet** |
     | Intervalos de portas de destino | **\*** |
     | Protocolo | **TCP** |

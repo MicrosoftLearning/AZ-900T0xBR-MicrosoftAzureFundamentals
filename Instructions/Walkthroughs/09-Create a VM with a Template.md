@@ -11,21 +11,21 @@ Neste passo a passo, implantaremos uma máquina virtual com um modelo de início
 
 Nesta tarefa, navegaremos na galeria de início rápido do Azure e implantaremos um modelo que cria uma máquina virtual. 
 
-1. No ambiente do laboratório, abra uma nova janela no navegador e insira T https://azure.microsoft.com/en-us/resources/templates/?azure-portal=true. Na galeria, você encontrará vários modelos populares e atualizados recentemente. Esses modelos automatizam a implantação de recursos do Azure, incluindo a instalação de pacotes de software populares. Navegue pelos diversos tipos de modelos disponíveis.
+1. No ambiente do laboratório, abra uma nova janela no navegador e insira T https://azure.microsoft.com/pt-br/resources/templates/?azure-portal=true. Na galeria, você encontrará vários modelos populares e atualizados recentemente. Esses modelos automatizam a implantação de recursos do Azure, incluindo a instalação de pacotes de software populares. Navegue pelos diversos tipos de modelos disponíveis.
 
 3. Selecione **Implantar VM simples do Windows**
 
 4. Clique no botão **Implantar no Azure**. A sessão do seu navegador será redirecionada automaticamente para o [portal do Azure](http://portal.azure.com/).
 
-    **Observação**: O botão **Implantar no Azure** permite que você implante o modelo por meio do portal do Azure. Durante essa implantação, será solicitado apenas um pequeno conjunto de parâmetros de configuração. 
+  **Observação**: O botão **Implantar no Azure** permite que você implante o modelo por meio do portal do Azure. Durante essa implantação, será solicitado apenas um pequeno conjunto de parâmetros de configuração. 
 
-5. Quando solicitado, entre com sua assinatura Azure.
+5. Quando solicitado, entre com sua assinatura Azure usando as credenciais fornecidas mais cedo nas instruções.
 
-6. Na folha **Implantação Personalizada**, selecione **Editar modelo**. O formato de modelo do Resource Manager usa o formato JSON. Revise os parâmetros e variáveis.  Em seguida, localize o parâmetro para o nome da máquina virtual. Altere o nome para **myVMTemplate**. **Salve** suas alterações. Você retornará à folha **Implantação personalizada** no portal do Azure.
+6. Clique em **Editar modelo**. O formato de modelo do Resource Manager usa o formato JSON. Revise os parâmetros e variáveis.  Em seguida, localize o parâmetro para o nome da máquina virtual. Altere o nome para **myVMTemplate**. **Salve** suas alterações. 
 
     ![Captura de tela do modelo com a mudança de nome da VM em destaque.](../images/0901.png)
 
-7. Na folha **Implementação personalizada**, configure os parâmetros exigidos pelo modelo (substitua ***xxxx*** no prefixo da etiqueta de DNS por letras e dígitos de forma que a etiqueta seja globalmente exclusiva). Mantenha os padrões para todo o resto. 
+7. Agora, configure os parâmetros exigidos pelo modelo (substitua ***xxxx*** no prefixo da etiqueta de DNS por letras e dígitos para que o rótulo seja globalmente exclusivo). Mantenha os padrões para todo o resto. 
 
     | Configuração| Valor|
     |----|----|
