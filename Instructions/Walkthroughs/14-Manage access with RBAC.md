@@ -29,7 +29,7 @@ Nesta tarefa, atribuiremos a função de colaborador da máquina virtual.
 5. **Atualize** a página do grupo de recursos e clique na entrada que representa o grupo de recursos recém-criado.
 
 6. Clique na folha **Controle de acesso (IAM)** e alterne para a guia **Funções**. Percorra o grande número de definições de funções disponíveis. Use os ícones informativos para ter uma ideia das permissões de cada função. Observe que também há informações sobre o número de usuários e grupos atribuídos a cada função.
-7. 
+
 ![imagem](https://user-images.githubusercontent.com/89808319/144266949-f19d91ab-31d6-4c8b-af36-c00035925cf0.png)
 
 7. Alterne para a guia **Atribuições de função** da folha **myRGRBAC – Controle de acesso (IAM)**, clique em **+ Adicionar** e, em seguida, clique em **Adicionar atribuição de função**. Pesquise pela função de Colaborador de máquina virtual e selecione. Vá para a guia "Membros" e Atribua acesso a: Usuário, grupo ou entidade de serviço. Depois, clique em + Selecionar membros e digite seu nome na função de pesquisa do pop-up e clique em 'selecionar'. Depois clique em 'Analisar e atribuir'
