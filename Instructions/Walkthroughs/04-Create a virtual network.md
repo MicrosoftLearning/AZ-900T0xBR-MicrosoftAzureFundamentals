@@ -86,17 +86,17 @@ Nesta tarefa, vamos testar se as máquinas virtuais podem se comunicar (executar
 
 6. Você pode receber um aviso de certificado durante o processo de logon. Clique em **Sim** para criar a conexão e se conectar à VM implantada. Você deve se conectar com sucesso. Feche o Windows Server e as janelas pop-up do Painel. Deve ser exibido um plano de fundo azul do Windows. Agora você está na máquina virtual.
 
-Observação: Na máquina virtual criada recentemente, desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows
+7. Na máquina virtual criada recentemente, desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows
 
-7. Abra o PowerShell na máquina virtual selecionando o botão **Iniciar**. Em Pesquisar, insira **PowerShell** e clique com o botão direito em **Windows PowerShell** para **Executar como administrador**
+8. Abra o PowerShell na máquina virtual selecionando o botão **Iniciar**. Em Pesquisar, insira **PowerShell** e clique com o botão direito em **Windows PowerShell** para **Executar como administrador**
 
-8. No PowerShell, tente executar ping na vm2 inserindo:
+9. No PowerShell, tente executar ping na vm2 inserindo:
 
    ```PowerShell
    ping vm2
    ```
 
- 9. É provável que você tenha êxito. Você executou ping na VM2 a partir da VM1.
+ 10. É provável que você tenha êxito. Você executou ping na VM2 a partir da VM1.
 
 
 **Parabéns!** Você configurou e implantou duas máquinas virtuais em uma rede virtual e conseguiu conectá-las.

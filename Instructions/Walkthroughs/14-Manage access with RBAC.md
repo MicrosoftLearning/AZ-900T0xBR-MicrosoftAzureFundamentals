@@ -30,20 +30,18 @@ Nesta tarefa, atribuiremos a função de colaborador da máquina virtual.
 
 6. Clique na folha **Controle de acesso (IAM)** e alterne para a guia **Funções**. Percorra o grande número de definições de funções disponíveis. Use os ícones informativos para ter uma ideia das permissões de cada função. Observe que também há informações sobre o número de usuários e grupos atribuídos a cada função.
 
-    ![Captura de tela da folha de funções do IAM. As funções de proprietário, colaborador e leitor são mostradas.](../images/1501.png)
+![imagem](https://user-images.githubusercontent.com/89808319/144266949-f19d91ab-31d6-4c8b-af36-c00035925cf0.png)
 
-7. Alterne para a guia **Atribuições de função** da folha **myRGRBAC – Controle de acesso (IAM)**, clique em **+ Adicionar** e, em seguida, clique em **Adicionar atribuição de função**. Atribua a função de colaborador da máquina virtual à sua conta de usuário e clique em **Salvar**. 
+7. Alterne para a guia **Atribuições de função** da folha **myRGRBAC – Controle de acesso (IAM)**, clique em **+ Adicionar** e, em seguida, clique em **Adicionar atribuição de função**. Pesquise pela função de Colaborador de máquina virtual e selecione. Vá para a guia "Membros" e Atribua acesso a: Usuário, grupo ou entidade de serviço. Depois, clique em + Selecionar membros e digite seu nome na função de pesquisa do pop-up e clique em 'selecionar'. Depois clique em 'Analisar e atribuir'
 
-    | Configuração | Valor |
-    | -- | -- |
-    | Função | **Colaborador de máquina virtual** |
-    | Atribuir acesso a | **usuário, grupo ou entidade de serviço** |
-    | Selecione | **Adicionar conta de usuário** |
+    
+    ![imagem](https://user-images.githubusercontent.com/89808319/144266255-3a0f8574-9358-4c21-8f95-3503747e77c8.png)
+
  
 
     **Observação:** A função de colaborador da máquina virtual permite que você gerencie máquinas virtuais, mas não acesse seu sistema operacional ou gerencie a rede virtual e a conta de armazenamento às quais estão conectadas.
 
-    ![Captura de tela da página Adicionar atribuição de função preenchida com as informações necessárias.](../images/1502.png)
+  
 
 8. **Atualize** a página de atribuições de função e certifique-se de que agora você esteja listado como um colaborador da máquina virtual. 
 
