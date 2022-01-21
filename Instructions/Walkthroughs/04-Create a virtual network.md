@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '04 – Criar uma rede virtual (20 min)'
     module: 'Módulo 02 – Principais serviços do Azure (cargas de trabalho)'
@@ -86,7 +86,7 @@ Nesta tarefa, vamos testar se as máquinas virtuais podem se comunicar (executar
 
 6. Você pode receber um aviso de certificado durante o processo de logon. Clique em **Sim** para criar a conexão e se conectar à VM implantada. Você deve se conectar com sucesso. Feche o Windows Server e as janelas pop-up do Painel. Deve ser exibido um plano de fundo azul do Windows. Agora você está na máquina virtual.
 
-7. Na máquina virtual criada recentemente, desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows
+7. Nas **duas** máquinas virtuais criadas recentemente, conecte-se via RDP e desabilite o firewall público e o privado em sua máquina virtual: vá para o menu Iniciar > Configurações > Rede e Internet > Localizar Firewall do Windows.
 
 8. Abra o PowerShell na máquina virtual selecionando o botão **Iniciar**. Em Pesquisar, insira **PowerShell** e clique com o botão direito em **Windows PowerShell** para **Executar como administrador**
 
