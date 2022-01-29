@@ -1,3 +1,12 @@
+**Important Notice!**
+
+This repo was replaced by a [new repo](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals.pt-br) on 21 January 2022. We're making this change to improve the localized version of this content and reduce the delta between English and localized content updates. 
+After a short interval, this repo will be archived.
+
+**Contributions**
+
+At this time, we are not accepting external contributions to this repo. If you have suggestions or spot any errors, please create a pull request or report an issue on the [new repo](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals.pt-br).
+
 # AZ-900T00 e AZ-900T01: Conceitos básicos do Microsoft Azure
 
 - **[Link para tutoriais (formato HTML)](https://microsoftlearning.github.io/AZ-900T0xBR-MicrosoftAzureFundamentals/)**
